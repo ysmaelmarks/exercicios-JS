@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>POLICIA FEDERAL</h1>
+    <p>Você foi parado pela Policia Federal.</p>
+    RG: <input type="number" name="identidade" id="identidade"> 
+    <br>
+    NOME: <input type="text" name="nome" id="nome">
+    <br> <input type="button" value="VERIFICAR" onclick="verificar()">
+    <div id="msg">
+        
+    </div>
+    <script>
+    function verificar() {
+    var rgTeste = document.querySelector('input#identidade')
+    /* var nomeTeste = document.querySelector('input#nome') */
+    var msgdiv = document.querySelector('div#msg')
+    var rg = Number(rgTeste.value)
+        if (rg > 200) {
+            msgdiv.innerText = 'Você é procurado e será preso'
+        } else {
+            msgdiv.innerText = 'Tudo certo'
+        }    
+    } 
+    
+    </script>
+</body>
+</html>

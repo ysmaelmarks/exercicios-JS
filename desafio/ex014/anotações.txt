@@ -1,0 +1,7 @@
+data = new Date()
+data.gethours
+
+img.src = ''
+body.style.background = '#hexcor'
+
+body onload = "carregar()"
